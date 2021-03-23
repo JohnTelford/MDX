@@ -1,0 +1,60 @@
+import {
+  Box,
+  Card,
+  Image,
+  Heading,
+  Text
+} from 'rebass'
+
+# Hello, *world*!
+
+Below is an example of JSX embedded in Markdown. <br /> **Try and change
+the background color!**
+
+<div style={{ padding: '20px', backgroundColor: 'pink' }}>
+  <h3>This is JSX</h3>
+</div>
+
+> This is blockquote
+is this?
+
+Not this?
+
+# Below is a JSX block
+
+<div style={{ padding: '10px 30px', backgroundColor: 'pink' }}>
+  <h2>Try making this heading have the color green</h2>
+</div>
+
+## rebass
+
+<Button variant='primary' mr={2}>Beep</Button>
+<Button variant='secondary'>Boop</Button>
+
+<Box
+  color='red'
+  bg='blue'
+  p={3}
+  my={5}
+>
+> ”This is an important quote.”
+</Box>
+
+<Box
+  sx={{
+    ul: {
+      listStyle: 'none',
+      display: 'grid',
+      padding: 0,
+      gridGap: 3,
+      gridTemplateColumns: 'repeat(auto-fit, minmax(128px, 1fr))',
+    },
+    li: {
+      fontWeight: 'bold',
+    }
+  }}>
+- This is a list
+- Displayed in a grid layout
+- With custom styles
+- Pretty cool, huh?
+</Box>
