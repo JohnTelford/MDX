@@ -1,15 +1,26 @@
+import { Link } from 'gatsby'
+
 import {
   Box,
   Card,
   Image,
   Heading,
-  Text
+  Text,
+  Button
 } from 'rebass'
 
-# Hello, *world*!
+- <Link to="/">homepage</Link>
 
-Below is an example of JSX embedded in Markdown. <br /> **Try and change
-the background color!**
+---
+
+# test_mdx
+
+Below are  examples of React JSX (JavaScript XML) components embedded in MDX Markdown. 
+
+---
+
+## JSX
+
 
 <div style={{ padding: '20px', backgroundColor: 'pink' }}>
   <h3>This is JSX</h3>
@@ -20,16 +31,16 @@ is this?
 
 Not this?
 
-# Below is a JSX block
+### Below is a JSX block
 
-<div style={{ padding: '10px 30px', backgroundColor: 'pink' }}>
+<div style={{ padding: '10px 30px', backgroundColor: 'cyan' }}>
   <h2>Try making this heading have the color green</h2>
 </div>
 
-## rebass
+>
+>
 
-<Button variant='primary' mr={2}>Beep</Button>
-<Button variant='secondary'>Boop</Button>
+## Testing rebass
 
 <Box
   color='red'
