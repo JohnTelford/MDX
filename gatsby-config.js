@@ -7,6 +7,20 @@ module.exports = {
     description:
       'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
     author: '@chrisbiscardi',
+      menuLinks:[
+        {
+          name : 'home',
+          link : '/'
+        },
+        {
+          name : 'test_mdx',
+          link : '/test_mdx'
+        },
+        {
+          name : 'links',
+          link : '/links'
+        }
+      ]
   },
   plugins: [
     {
