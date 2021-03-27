@@ -13,8 +13,8 @@ module.exports = {
           link : '/'
         },
         {
-          name : 'test_mdx',
-          link : '/test_mdx'
+          name : 'testmdx',
+          link : '/testmdx'
         },
         {
           name : 'links',

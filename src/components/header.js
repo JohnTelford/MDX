@@ -11,7 +11,7 @@ const Header = ({ siteTitle, menuLinks }) => (
   >
     <div
       style={{
-        background: "blue",
+        background: "green",
         marginBottom: "1.45rem",
       }}
     >
