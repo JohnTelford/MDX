@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     // title: 'Gatsby Starter MDX Basic',
-    title : 'test_mdx',
+    title : 'MDX Test',
     description:
       'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
     author: '@chrisbiscardi',
@@ -23,6 +23,34 @@ module.exports = {
       ]
   },
   plugins: [
+    {
+      resolve: '@stackbit/gatsby-plugin-menus',
+      options: {
+        // static definition of menu items (optional)
+        menus: {
+          main: // identifier of menu container
+            [ // array of contained children menu items
+              {
+                identifier: 'myId', // identifier for this item (optional)
+                title: 'Title for page',
+                url: '/page-1/',
+                weight: 1
+              }
+            ]
+        },
+        // Gatsby node types from which we extract menus (optional, see "Advanced usage")
+        sourceNodeType: 'MarkdownRemark', 
+        // the relative node path where we can find the 'menus' container (optional)
+        sourceDataPath: 'frontmatter',
+        // the relative node path where we can find the page's URL (required)
+        sourceUrlPath: 'fields.url',
+        // custom menu loading function (optional)
+        // menuLoader: customLoaderFunction,
+        // the property to use for injecting to the page context (optional, see "Advanced usage")
+        pageContextProperty: 'menus', 
+      },
+    },
+
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -51,8 +79,10 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
+
 }
