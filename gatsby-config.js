@@ -13,13 +13,17 @@ module.exports = {
           link : '/'
         },
         {
+          name : 'links',
+          link : '/links'
+        },
+        {
+          name : 'about',
+          link : '/about'
+        },
+        {
           name : 'testmdx',
           link : '/testmdx'
         },
-        {
-          name : 'links',
-          link : '/links'
-        }
       ]
   },
   plugins: [
